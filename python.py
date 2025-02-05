@@ -55,9 +55,48 @@ data = 'Info'
 #     print(i)
 #     i -= 10
 
-work = True
-while work:
-        user_input = input("Enter word stop: ")
-        if user_input == 'STOP' or user_input == 'stop':
-            work = False
-print("While loop is done")
+# work = True
+# while work:
+#         user_input = input("Enter word stop: ")
+#         if user_input == 'STOP' or user_input == 'stop':
+#             work = False
+# print("While loop is done")
+
+# /////////////////////////////////////////
+
+# nums = [5, 7, 4, 5.45, True, 6]
+# nums[0] = 34.34
+# # print(nums[3])
+
+# nums2 = [5, 7, 3, [5, "Text", True]]
+# # print(nums2[-2])
+
+# nums.append(45) #++++++++
+# nums.insert(1, False) #False = 0, True = 1
+# # nums.extend(nums2)
+# nums.sort()
+# # nums.reverse()
+# print(nums)
+
+# /////////////////////////////////////////////////
+
+# nums = [5, 3, 2, 6.25]
+
+# for el in nums:
+#     res = el ** 2
+#     print(res)
+
+# ///////////////////////////////////////////////////
+# while == допоки
+
+user_count_hobby = int(input("Enter hobby number: "))
+
+i = 0
+hobby = []
+while i < user_count_hobby:
+    text = "Enter hobby " + str(i + 1) + ": "
+    hobby.append(input(text))
+    
+    i += 1
+
+print(hobby)
