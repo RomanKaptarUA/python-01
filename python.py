@@ -89,14 +89,101 @@ data = 'Info'
 # ///////////////////////////////////////////////////
 # while == допоки
 
-user_count_hobby = int(input("Enter hobby number: "))
+# user_count_hobby = int(input("Enter hobby number: "))
 
-i = 0
-hobby = []
-while i < user_count_hobby:
-    text = "Enter hobby " + str(i + 1) + ": "
-    hobby.append(input(text))
+# i = 0
+# hobby = []
+# while i < user_count_hobby:
+#     text = "Enter hobby " + str(i + 1) + ": "
+#     hobby.append(input(text))
     
-    i += 1
+#     i += 1
 
-print(hobby)
+# print(hobby)
+
+# ///////////////////////////////////////////////////////////
+
+# word = list('itproger')
+# word[0] = 'I'
+# word.append('!')
+# result = ''.join(word)
+# print(word)
+# print(len(word))
+
+# print(result)
+# print(result.upper())
+# print(result.capitalize())
+# print(result.lower())
+
+# print(result.islower())
+# print(result.isupper())
+
+# ///////////////////////////////////////////////////////
+
+# text = 'football,basketball,skate,drive'
+# hobbies = text.split(',')
+
+# for i in range(0, len(hobbies)): # від нуля до довжини hobbies
+#     hobbies[i] = hobbies[i].capitalize()
+
+# result = ", ".join(hobbies)
+# print(result)
+
+# /////////////////////////////////////////////////////////
+
+# lis = [5, 3, True, "Some", [5, 4]]
+# print(lis[1:5:2]) # перший параметр = (з) індексований, другий = (до) нормальний, третій = (крок)
+
+# /////////////////////////////////////////////////////////////
+# Кортежи = масив. В кортежі не можемо вносити зміни
+# nums = [5, 6]
+# data = tuple(nums)
+# print(data) # перетворює масив в кортеж
+
+# //////////////////////////////////////////////////////////////
+# Словники
+# person = {'name': 'Alex', 'age': 15, 5: 12, True: 'False'}
+# person[5] = 'Five'
+# print(person)
+# print(person['age'])
+# ///////////////////////////////////////////////////////////
+# person1 = dict(name='Alex', age=15) # dict = dictionary
+# print(person1)
+# print(person1['name'])
+
+# for i in person:
+#     print(i)
+
+# print(person.items())
+
+
+# for key, values in person.items():
+#       print(key, values, sep=" - ")
+
+# for el in person.values():
+#     print(el)
+
+# ////////////////////////////////////////////////////////
+
+# person =  {'name': 'Alex', 'age': 15, 5: 12, True: 'False'}
+# print(person.get("name"))
+
+# person['bio'] = 'Text' # щоб додати
+# print(person)
+
+# //////////////////////////////////////////////////////////
+# Великий словник
+people = {
+  'user_1': {
+     'name': 'John',
+     'age': 27,
+     'address': ('Мамаївці', 'Some street'),
+     'grades': {'math': 5, 'physics': 5},
+    },
+    'user_2': {
+      'surname': 'Doe',
+      'name': 'Alex',
+    }
+}
+
+print(people['user_1']['address'][1])
