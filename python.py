@@ -173,17 +173,50 @@ data = 'Info'
 
 # //////////////////////////////////////////////////////////
 # Великий словник
-people = {
-  'user_1': {
-     'name': 'John',
-     'age': 27,
-     'address': ('Мамаївці', 'Some street'),
-     'grades': {'math': 5, 'physics': 5},
-    },
-    'user_2': {
-      'surname': 'Doe',
-      'name': 'Alex',
-    }
-}
+# people = {
+#   'user_1': {
+#      'name': 'John',
+#      'age': 27,
+#      'address': ('Мамаївці', 'Some street'),
+#      'grades': {'math': 5, 'physics': 5},
+#     },
+#     'user_2': {
+#       'surname': 'Doe',
+#       'name': 'Alex',
+#     }
+# }
 
-print(people['user_1']['address'][1])
+# print(people['user_1']['address'][1])
+
+# //////////////////////////////////////////////////////////////////////////
+# // множини
+# data = {'Alex', 'Bob', 6, True, 24.5}
+# data.pop()
+# # #data.clear()
+# data.add(5)
+# data.update([5, 2])
+# data.remove(6)
+# print(data) # не можна до елементів звиртатись
+
+# //////////////////////////////////////////////////////////////////////////
+# Щоб видалити повторні елементи
+# nums = [5, 4, 6, 5, 2, 5]
+# res = set(nums)
+# word = 'hello'
+# print(set(word))
+# print(res)
+
+# ////////////////////////////////////////////////////////////////////////
+# frozenset == не можна нічого змінювати
+# data = frozenset(['Alex', 'Bob', 6, True, 24.5])
+# print(data)
+
+# //////////////////////////////////////////////////////////////////
+# функції
+def test_func(word):
+  print("hello", end="")
+  print("!")
+
+test_func()
+
+
